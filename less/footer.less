@@ -1,15 +1,23 @@
 .container3 {
     text-align: center;
+    background-color: black;
 
     nav {
-        margin: 1%;
-        padding: 1%;
+        padding: 2%;
+
+        @media @phone {
+            padding: 4%;
+        }
 
         a {
             margin: 1%;
             padding: 0 1%;
             background-color: black;
             border-radius: 5px;
+        }
+
+        a:hover {
+            color: @lendr-color;
         }
     }
 }

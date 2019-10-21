@@ -183,6 +183,7 @@ p {
 @media (max-width:500px) {
   .container1 .links {
     justify-content: center;
+    padding-top: 1%;
   }
 }
 .container1 .links a {
@@ -217,11 +218,11 @@ p {
   }
 }
 .container1 h3 {
-  margin: 5% 0 1%;
+  margin: 1% 0 1%;
   color: #FF9933;
 }
 .container1 .btn {
-  margin: 5% 0 1%;
+  margin: 1% 0 5%;
   color: white;
   background-color: black;
   border-radius: 10px;
@@ -256,53 +257,64 @@ p {
   padding-bottom: 2%;
 }
 .container2 .heading1 {
-  background-color: #333366;
+  background: #000000;
+  background: linear-gradient(90deg, #000000 0%, #333366 90%);
   border-radius: 10px;
   padding: 1%;
-  margin: 1% 1% 0;
+  margin: 2% 1%;
 }
 @media (max-width:500px) {
   .container2 .heading1 {
-    margin: 0;
+    margin: 1% 0;
+    background: #333366;
   }
 }
 .container2 .heading2 {
   background-color: #333366;
   border-radius: 10px;
   padding: 1%;
-  margin: 1% 0 0;
+  margin: 2% 0;
 }
 @media (max-width:500px) {
   .container2 .heading2 {
-    margin: 0;
+    margin: 1% 0;
   }
 }
 .container2 .heading3 {
-  background-color: #333366;
+  background: #333366;
+  background: linear-gradient(90deg, #333366 10%, #000000 100%);
   border-radius: 10px;
   padding: 1%;
-  margin: 1% 1% 0;
+  margin: 2% 1%;
 }
 @media (max-width:500px) {
   .container2 .heading3 {
-    margin: 0;
+    margin: 1% 0;
+    background: #333366;
   }
 }
 .container2 img {
   width: 100%;
-  height: 50%;
   border-radius: 20px;
 }
 .container3 {
   text-align: center;
+  background-color: black;
 }
 .container3 nav {
-  margin: 1%;
-  padding: 1%;
+  padding: 2%;
+}
+@media (max-width:500px) {
+  .container3 nav {
+    padding: 4%;
+  }
 }
 .container3 nav a {
   margin: 1%;
   padding: 0 1%;
   background-color: black;
   border-radius: 5px;
+}
+.container3 nav a:hover {
+  color: #FF9933;
 }

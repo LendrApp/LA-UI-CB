@@ -1,9 +1,10 @@
 .container3 {
   text-align: center;
+  background-color: black;
 }
 .container3 nav {
-  margin: 1%;
-  padding: 1%;
+  margin: 1% 0 0;
+  padding: 2%;
 }
 .container3 nav a {
   margin: 1%;
