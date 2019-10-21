@@ -1,0 +1,13 @@
+.container3 {
+  text-align: center;
+}
+.container3 nav {
+  margin: 1%;
+  padding: 1%;
+}
+.container3 nav a {
+  margin: 1%;
+  padding: 0 1%;
+  background-color: black;
+  border-radius: 5px;
+}
