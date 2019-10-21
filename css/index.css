@@ -144,18 +144,18 @@ header {
 }
 h1 {
   font-family: 'Acme', sans-serif;
-  font-size: 6rem;
-  color: rgba(255, 217, 0, 0.801);
+  font-size: 20rem;
+  color: #FF9933;
 }
 h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 3rem;
-  color: black;
+  color: #FFFFFF;
 }
 h3 {
   font-family: 'Roboto', sans-serif;
   font-size: 2.3rem;
-  color: black;
+  color: #FFFFFF;
 }
 nav {
   font-family: 'Signika', sans-serif;
@@ -163,19 +163,27 @@ nav {
 }
 a {
   text-decoration: none;
-  color: white;
+  color: #FFFFFF;
+  border: 1px solid white;
 }
 p {
   font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
+  color: #FFFFFF;
 }
-img {
-  max-width: 100%;
+.container1 {
+  width: 100%;
   height: auto;
+  background-image: url("../images/bg-image.jpg");
 }
 .container1 .links {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
+}
+@media (max-width:500px) {
+  .container1 .links {
+    justify-content: center;
+  }
 }
 .container1 .links a {
   margin: 1%;
@@ -184,39 +192,106 @@ img {
   border-radius: 5px;
 }
 .container1 .links a:hover {
-  color: rgba(255, 217, 0, 0.801);
+  color: #FF9933;
 }
 .container1 .appTitle {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.container1 h1 {
+  margin: 5% 0 1%;
+  animation: tracking-in-expand 3s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.container1 h3 {
+  margin: 5% 0 1%;
+  color: #FF9933;
+}
+.container1 .btn {
+  margin: 5% 0 1%;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  padding: 10px 40px;
+  font-size: 3rem;
+}
+.container1 .btn:hover {
+  color: #FF9933;
+}
 .container2 {
   display: flex;
   justify-content: center;
+  width: 100%;
+}
+@media (max-width:500px) {
+  .container2 {
+    flex-direction: column;
+  }
 }
 .container2 div {
   width: 33%;
   text-align: center;
+  border: 1px solid black;
+}
+@media (max-width:500px) {
+  .container2 div {
+    width: 100%;
+  }
+}
+.container2 div h2,
+.container2 div p {
+  padding-bottom: 2%;
 }
 .container2 .heading1 {
+  background-color: #333366;
+  border-radius: 10px;
   padding: 1%;
   margin: 1% 1% 0;
 }
+@media (max-width:500px) {
+  .container2 .heading1 {
+    margin: 0;
+  }
+}
 .container2 .heading2 {
+  background-color: #333366;
+  border-radius: 10px;
   padding: 1%;
   margin: 1% 0 0;
 }
+@media (max-width:500px) {
+  .container2 .heading2 {
+    margin: 0;
+  }
+}
 .container2 .heading3 {
+  background-color: #333366;
+  border-radius: 10px;
   padding: 1%;
   margin: 1% 1% 0;
+}
+@media (max-width:500px) {
+  .container2 .heading3 {
+    margin: 0;
+  }
 }
 .container2 img {
   width: 100%;
   height: 50%;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .container3 {
   text-align: center;
