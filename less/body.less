@@ -63,3 +63,71 @@
         border-radius: 20px;
     }
 }
+
+
+
+///////// ABOUT US PAGE ////////
+
+.about2 {
+    width: 100%;
+    height: auto;
+    background-image: url("../images/about-header-img.jpg");
+    background-size: 100%;
+
+    .row {
+        display: flex;
+    }
+
+    .our-team {
+        .border2;
+        width: 100%;
+        padding: 20px 15px 30px;
+        background: white;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .our-team .pic {
+        width: 100%;
+        background: white;
+        padding: 10px;
+        margin-bottom: 25px;
+        transition: all 0.5s ease 0s;
+    }
+
+    .our-team:hover .pic {
+        background: @lendr-color;
+        border-radius: 50%;
+    }
+
+    .pic img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .our-team .title {
+        // display: block;
+        font-size: 20px;
+        font-weight: 600;
+        color: #2e282a;
+        margin: 0 0 7px 0;
+    }
+
+    .our-team .post {
+        display: block;
+        font-size: 15px;
+        color: #17bebb;
+        text-transform: capitalize;
+        margin-bottom: 15px;
+    }
+
+    .social {
+        font-size: 2rem;
+        padding: 0.5%;
+    }
+
+        a {
+            color: @section-bg-color;
+        }
+}
