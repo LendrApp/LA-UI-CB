@@ -8,16 +8,22 @@
     }
 
     div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         width: 33%;
         text-align: center;
-        .border;
 
             @media @phone {
                 width: 100%;
             }
 
-        h2, p {
-            padding-bottom: 2%;
+        h2 {
+            margin-bottom: 2%;
+        }
+
+        p {
+            margin-bottom: 2%;
         }
     }
 
@@ -69,65 +75,140 @@
 ///////// ABOUT US PAGE ////////
 
 .about2 {
-    width: 100%;
-    height: auto;
     background-image: url("../images/about-header-img.jpg");
     background-size: 100%;
 
-    .row {
+    .row1 {
         display: flex;
-    }
+        justify-content: center;
+        padding: 2%;
 
-    .our-team {
-        .border2;
-        width: 100%;
-        padding: 20px 15px 30px;
-        background: white;
-        border-radius: 15px;
-        text-align: center;
-    }
-
-    .our-team .pic {
-        width: 100%;
-        background: white;
-        padding: 10px;
-        margin-bottom: 25px;
-        transition: all 0.5s ease 0s;
-    }
-
-    .our-team:hover .pic {
-        background: @lendr-color;
-        border-radius: 50%;
-    }
-
-    .pic img {
-        width: 100%;
-        height: auto;
-        border-radius: 50%;
-    }
-
-    .our-team .title {
-        // display: block;
-        font-size: 20px;
-        font-weight: 600;
-        color: #2e282a;
-        margin: 0 0 7px 0;
-    }
-
-    .our-team .post {
-        display: block;
-        font-size: 15px;
-        color: #17bebb;
-        text-transform: capitalize;
-        margin-bottom: 15px;
-    }
-
-    .social {
-        font-size: 2rem;
-        padding: 0.5%;
-    }
-
-        a {
-            color: @section-bg-color;
+        @media @phone {
+            flex-direction: column;
+            padding-bottom: 0;
         }
+
+        .our-team {
+            .border2;
+            width: 100%;
+            padding: 20px 15px 30px;
+            background: white;
+            border-radius: 15px;
+            text-align: center;
+
+            .pic {
+                width: 100%;
+                background: white;
+                padding: 10px;
+                margin-bottom: 25px;
+                transition: all 0.5s ease 0s;
+            }
+
+            .pic:hover {
+                background: @lendr-color;
+                border-radius: 50%;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 50%;
+            }
+
+            .title {
+                font-size: 3rem;
+                font-weight: 600;
+                margin-bottom: 1%;
+            }
+
+            .post {
+                font-size: 2.5rem;
+                color: #17bebb;
+                margin-bottom: 2%;
+            }
+
+            .social {
+                font-size: 3rem;
+                margin-top: 2%;
+
+
+                a {
+                    color: @section-bg-color;
+                }
+
+                a:hover {
+                    background: @lendr-color;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    .row2 {
+        display: flex;
+        justify-content: center;
+        padding: 0 2% 2%;
+
+        @media @phone {
+            flex-direction: column;
+        }
+
+        .our-team {
+            .border2;
+            width: 25%;
+            padding: 20px 15px 30px;
+            background: white;
+            border-radius: 15px;
+            text-align: center;
+
+            @media @phone {
+                width: 100%;
+            }
+
+            .pic {
+                width: 100%;
+                background: white;
+                padding: 10px;
+                margin-bottom: 25px;
+                transition: all 0.5s ease 0s;
+            }
+
+            .pic:hover {
+                background: @lendr-color;
+                border-radius: 50%;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 50%;
+            }
+
+            .title {
+                font-size: 3rem;
+                font-weight: 600;
+                margin-bottom: 1%;
+            }
+
+            .post {
+                font-size: 2.5rem;
+                color: #17bebb;
+                margin-bottom: 2%;
+            }
+
+            .social {
+                font-size: 3rem;
+                margin-top: 2%;
+
+                a {
+                    color: @section-bg-color;
+                }
+
+                a:hover {
+                    background: @lendr-color;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
 }

@@ -196,7 +196,7 @@ p {
 }
 .container1 .links a {
   margin: 1%;
-  padding: 0 1%;
+  padding: 0 1.5%;
   background-color: black;
   border-radius: 5px;
 }
@@ -248,6 +248,11 @@ p {
   justify-content: center;
   padding: 1%;
 }
+@media (max-width:500px) {
+  .about1 {
+    padding: 2% 0;
+  }
+}
 .about1 a {
   margin: 1%;
   padding: 0 1%;
@@ -268,18 +273,22 @@ p {
   }
 }
 .container2 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 33%;
   text-align: center;
-  border: 1px solid black;
 }
 @media (max-width:500px) {
   .container2 div {
     width: 100%;
   }
 }
-.container2 div h2,
+.container2 div h2 {
+  margin-bottom: 2%;
+}
 .container2 div p {
-  padding-bottom: 2%;
+  margin-bottom: 2%;
 }
 .container2 .heading1 {
   background: #000000;
@@ -323,15 +332,21 @@ p {
   border-radius: 20px;
 }
 .about2 {
-  width: 100%;
-  height: auto;
   background-image: url("../images/about-header-img.jpg");
   background-size: 100%;
 }
-.about2 .row {
+.about2 .row1 {
   display: flex;
+  justify-content: center;
+  padding: 2%;
 }
-.about2 .our-team {
+@media (max-width:500px) {
+  .about2 .row1 {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+}
+.about2 .row1 .our-team {
   border: 3px solid black;
   width: 100%;
   padding: 20px 15px 30px;
@@ -339,41 +354,102 @@ p {
   border-radius: 15px;
   text-align: center;
 }
-.about2 .our-team .pic {
+.about2 .row1 .our-team .pic {
   width: 100%;
   background: white;
   padding: 10px;
   margin-bottom: 25px;
   transition: all 0.5s ease 0s;
 }
-.about2 .our-team:hover .pic {
+.about2 .row1 .our-team .pic:hover {
   background: #FF9933;
   border-radius: 50%;
 }
-.about2 .pic img {
+.about2 .row1 .our-team img {
   width: 100%;
   height: auto;
   border-radius: 50%;
 }
-.about2 .our-team .title {
-  font-size: 20px;
+.about2 .row1 .our-team .title {
+  font-size: 3rem;
   font-weight: 600;
-  color: #2e282a;
-  margin: 0 0 7px 0;
+  margin-bottom: 1%;
 }
-.about2 .our-team .post {
-  display: block;
-  font-size: 15px;
+.about2 .row1 .our-team .post {
+  font-size: 2.5rem;
   color: #17bebb;
-  text-transform: capitalize;
-  margin-bottom: 15px;
+  margin-bottom: 2%;
 }
-.about2 .social {
-  font-size: 2rem;
-  padding: 0.5%;
+.about2 .row1 .our-team .social {
+  font-size: 3rem;
+  margin-top: 2%;
 }
-.about2 a {
+.about2 .row1 .our-team .social a {
   color: #333366;
+}
+.about2 .row1 .our-team .social a:hover {
+  background: #FF9933;
+  border-radius: 50%;
+}
+.about2 .row2 {
+  display: flex;
+  justify-content: center;
+  padding: 0 2% 2%;
+}
+@media (max-width:500px) {
+  .about2 .row2 {
+    flex-direction: column;
+  }
+}
+.about2 .row2 .our-team {
+  border: 3px solid black;
+  width: 25%;
+  padding: 20px 15px 30px;
+  background: white;
+  border-radius: 15px;
+  text-align: center;
+}
+@media (max-width:500px) {
+  .about2 .row2 .our-team {
+    width: 100%;
+  }
+}
+.about2 .row2 .our-team .pic {
+  width: 100%;
+  background: white;
+  padding: 10px;
+  margin-bottom: 25px;
+  transition: all 0.5s ease 0s;
+}
+.about2 .row2 .our-team .pic:hover {
+  background: #FF9933;
+  border-radius: 50%;
+}
+.about2 .row2 .our-team img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+.about2 .row2 .our-team .title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1%;
+}
+.about2 .row2 .our-team .post {
+  font-size: 2.5rem;
+  color: #17bebb;
+  margin-bottom: 2%;
+}
+.about2 .row2 .our-team .social {
+  font-size: 3rem;
+  margin-top: 2%;
+}
+.about2 .row2 .our-team .social a {
+  color: #333366;
+}
+.about2 .row2 .our-team .social a:hover {
+  background: #FF9933;
+  border-radius: 50%;
 }
 .container3 {
   text-align: center;
@@ -389,7 +465,7 @@ p {
 }
 .container3 nav a {
   margin: 1%;
-  padding: 0 1%;
+  padding: 0 1.5%;
   background-color: black;
   border-radius: 5px;
 }

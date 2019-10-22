@@ -14,7 +14,7 @@
 
         a{
             margin: 1%;
-            padding: 0 1%;
+            padding: 0 1.5%;
             background-color: black;
             border-radius: 5px;
         }
@@ -71,9 +71,13 @@
     background-color: black;
 
     .about-links {
-    display: flex;
-    justify-content: center;
-    padding: 1%;
+        display: flex;
+        justify-content: center;
+        padding: 1%;
+    }
+
+    @media @phone {
+        padding: 2% 0;
     }
 
     a{
