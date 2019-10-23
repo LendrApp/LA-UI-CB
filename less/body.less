@@ -11,7 +11,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 33%;
+        width: 50%;
         text-align: center;
 
             @media @phone {
@@ -23,13 +23,15 @@
         }
 
         p {
+            letter-spacing: 0.2rem;
+            line-height: 3rem;
             margin-bottom: 2%;
         }
     }
 
     .heading1 {
         background: rgb(0,0,0);
-        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(51,51,102,1) 90%);
+        background: linear-gradient(90deg, #283018 0%, #729f98 90%);
         border-radius: 10px;
         padding: 1%;
         margin: 2% 1%;
@@ -41,19 +43,8 @@
     }
 
     .heading2 {
-        background-color: @section-bg-color;
-        border-radius: 10px;
-        padding: 1%;
-        margin: 2% 0;
-
-        @media @phone {
-            margin: 1% 0;
-        }
-    }
-
-    .heading3 {
         background: rgb(51,51,102);
-        background: linear-gradient(90deg, rgba(51,51,102,1) 10%, rgba(0,0,0,1) 100%);
+        background: linear-gradient(90deg, #729f98 10%, #283018 100%);
         border-radius: 10px;
         padding: 1%;
         margin: 2% 1%;
@@ -102,7 +93,7 @@
 
         h1 {
             font-size: 9rem;
-            color: @text-colors;
+            color: @text-color;
         }
     }
 
@@ -133,7 +124,7 @@
             }
 
             .pic:hover {
-                background: @lendr-color;
+                background: @main-color;
                 border-radius: 50%;
             }
 
@@ -151,7 +142,7 @@
 
             .post {
                 font-size: 2.5rem;
-                color: #17bebb;
+                color: @about-page-text;
                 margin-bottom: 2%;
             }
 
@@ -163,11 +154,11 @@
                 a {
                     padding: 0 2%;
                     border-radius: 50%;
-                    color: @section-bg-color;
+                    color: @about-page-text;
                 }
 
                 a:hover {
-                    background: @lendr-color;
+                    background: @main-color;
                     border-radius: 50%;
                 }
             }
@@ -204,7 +195,7 @@
             }
 
             .pic:hover {
-                background: @lendr-color;
+                background: @main-color;
                 border-radius: 50%;
             }
 
@@ -222,7 +213,7 @@
 
             .post {
                 font-size: 2.5rem;
-                color: #17bebb;
+                color: @about-page-text;
                 margin-bottom: 2%;
             }
 
@@ -233,11 +224,11 @@
                 a {
                     padding: 0 2%;
                     border-radius: 50%;
-                    color: @section-bg-color;
+                    color: @about-page-text;
                 }
 
                 a:hover {
-                    background: @lendr-color;
+                    background: @main-color;
                     border-radius: 50%;
                 }
             }

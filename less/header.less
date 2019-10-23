@@ -2,6 +2,7 @@
     width: 100%;
     height: auto;
     background-image: url("../images/bg-image.jpg");
+    
 
     .links {
         display:flex;
@@ -15,12 +16,12 @@
         a{
             margin: 1%;
             padding: 0 1.5%;
-            background-color: black;
+            background-color: @header-footer-bg;
             border-radius: 5px;
         }
 
         a:hover {
-            color: @lendr-color;
+            color: @main-color;
         }
     }
 
@@ -32,6 +33,7 @@
     }
 
     h1 {
+        font-weight: 800;
         margin: 5% 0 1%;
         animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
         @keyframes tracking-in-expand {
@@ -49,17 +51,22 @@
     }
 
     h3 {
-        margin: 1% 0 1%;
-        color: @lendr-color;
+        font-weight: 800;
+        margin: 2% 0 1%;
+        color: @main-color;
+    }
+
+    @media @phone {
+        text-align: center;
     }
 
     .btn {
-        margin: 1% 0 5%;
-        .button(white,black,10px);
+        margin: 4% 0 4%;
+        .button(@text-color,black,10px);
     }
 
     .btn:hover {
-        color: @lendr-color;
+        color: @main-color;
     }
 }
 
@@ -68,7 +75,7 @@
 ///////// ABOUT US PAGE ////////
 
 .about1 {
-    background-color: black;
+    background-color: @header-footer-bg;
 
     .about-links {
         display: flex;
@@ -83,11 +90,12 @@
     a{
         margin: 1%;
         padding: 0 1%;
-        background-color: black;
+        background-color: @header-footer-bg;
         border-radius: 5px;
     }
 
     a:hover {
-        color: @lendr-color;
+        color: @main-color;
+        text-decoration: none;
     }
 }

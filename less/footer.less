@@ -1,5 +1,5 @@
 .container3 {
-    background-color: black;
+    background-color: @header-footer-bg;
 
     nav {
         display: flex;
@@ -13,12 +13,18 @@
         a {
             margin: 1%;
             padding: 0 1.5%;
-            background-color: black;
+            background-color: @header-footer-bg;
             border-radius: 5px;
         }
 
         a:hover {
-            color: @lendr-color;
+            color: @main-color;
+            text-decoration: none;
         }
+    }
+
+    p{
+        font: @text-color;
+        text-align: center;
     }
 }

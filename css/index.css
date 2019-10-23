@@ -148,22 +148,22 @@ header {
 h1 {
   font-family: 'Acme', sans-serif;
   font-size: 20rem;
-  color: #FF9933;
+  color: #aa863a;
 }
 h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 3rem;
-  color: #FFFFFF;
+  color: #f0eceb;
 }
 h3 {
   font-family: 'Roboto', sans-serif;
   font-size: 2.3rem;
-  color: #FFFFFF;
+  color: #f0eceb;
 }
 h4 {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
-  color: black;
+  color: #283018;
 }
 nav {
   font-family: 'Signika', sans-serif;
@@ -171,13 +171,13 @@ nav {
 }
 a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #f0eceb;
   border: 1px solid white;
 }
 p {
   font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
-  color: #FFFFFF;
+  color: #f0eceb;
 }
 .container1 {
   width: 100%;
@@ -201,7 +201,7 @@ p {
   border-radius: 5px;
 }
 .container1 .links a:hover {
-  color: #FF9933;
+  color: #aa863a;
 }
 .container1 .appTitle {
   display: flex;
@@ -210,6 +210,7 @@ p {
   align-items: center;
 }
 .container1 h1 {
+  font-weight: 800;
   margin: 5% 0 1%;
   animation: tracking-in-expand 3s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
@@ -226,19 +227,25 @@ p {
   }
 }
 .container1 h3 {
-  margin: 1% 0 1%;
-  color: #FF9933;
+  font-weight: 800;
+  margin: 2% 0 1%;
+  color: #aa863a;
+}
+@media (max-width:500px) {
+  .container1 {
+    text-align: center;
+  }
 }
 .container1 .btn {
-  margin: 1% 0 5%;
-  color: white;
+  margin: 4% 0 4%;
+  color: #f0eceb;
   background-color: black;
   border-radius: 10px;
   padding: 10px 40px;
   font-size: 3rem;
 }
 .container1 .btn:hover {
-  color: #FF9933;
+  color: #aa863a;
 }
 .about1 {
   background-color: black;
@@ -260,7 +267,8 @@ p {
   border-radius: 5px;
 }
 .about1 a:hover {
-  color: #FF9933;
+  color: #aa863a;
+  text-decoration: none;
 }
 .container2 {
   display: flex;
@@ -276,7 +284,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 33%;
+  width: 50%;
   text-align: center;
 }
 @media (max-width:500px) {
@@ -288,11 +296,13 @@ p {
   margin-bottom: 2%;
 }
 .container2 div p {
+  letter-spacing: 0.2rem;
+  line-height: 3rem;
   margin-bottom: 2%;
 }
 .container2 .heading1 {
   background: #000000;
-  background: linear-gradient(90deg, #000000 0%, #333366 90%);
+  background: linear-gradient(90deg, #283018 0%, #729f98 90%);
   border-radius: 10px;
   padding: 1%;
   margin: 2% 1%;
@@ -300,31 +310,20 @@ p {
 @media (max-width:500px) {
   .container2 .heading1 {
     margin: 1% 0;
-    background: #333366;
+    background: #729f98;
   }
 }
 .container2 .heading2 {
-  background-color: #333366;
-  border-radius: 10px;
-  padding: 1%;
-  margin: 2% 0;
-}
-@media (max-width:500px) {
-  .container2 .heading2 {
-    margin: 1% 0;
-  }
-}
-.container2 .heading3 {
   background: #333366;
-  background: linear-gradient(90deg, #333366 10%, #000000 100%);
+  background: linear-gradient(90deg, #729f98 10%, #283018 100%);
   border-radius: 10px;
   padding: 1%;
   margin: 2% 1%;
 }
 @media (max-width:500px) {
-  .container2 .heading3 {
+  .container2 .heading2 {
     margin: 1% 0;
-    background: #333366;
+    background: #729f98;
   }
 }
 .container2 img {
@@ -360,7 +359,7 @@ p {
 }
 .about2 .team-header h1 {
   font-size: 9rem;
-  color: #FFFFFF;
+  color: #f0eceb;
 }
 .about2 .row1 {
   display: flex;
@@ -389,7 +388,7 @@ p {
   transition: all 0.5s ease 0s;
 }
 .about2 .row1 .our-team .pic:hover {
-  background: #FF9933;
+  background: #aa863a;
   border-radius: 50%;
 }
 .about2 .row1 .our-team img {
@@ -404,7 +403,7 @@ p {
 }
 .about2 .row1 .our-team .post {
   font-size: 2.5rem;
-  color: #17bebb;
+  color: #283018;
   margin-bottom: 2%;
 }
 .about2 .row1 .our-team .social {
@@ -414,10 +413,10 @@ p {
 .about2 .row1 .our-team .social a {
   padding: 0 2%;
   border-radius: 50%;
-  color: #333366;
+  color: #283018;
 }
 .about2 .row1 .our-team .social a:hover {
-  background: #FF9933;
+  background: #aa863a;
   border-radius: 50%;
 }
 .about2 .row2 {
@@ -451,7 +450,7 @@ p {
   transition: all 0.5s ease 0s;
 }
 .about2 .row2 .our-team .pic:hover {
-  background: #FF9933;
+  background: #aa863a;
   border-radius: 50%;
 }
 .about2 .row2 .our-team img {
@@ -466,7 +465,7 @@ p {
 }
 .about2 .row2 .our-team .post {
   font-size: 2.5rem;
-  color: #17bebb;
+  color: #283018;
   margin-bottom: 2%;
 }
 .about2 .row2 .our-team .social {
@@ -476,10 +475,10 @@ p {
 .about2 .row2 .our-team .social a {
   padding: 0 2%;
   border-radius: 50%;
-  color: #333366;
+  color: #283018;
 }
 .about2 .row2 .our-team .social a:hover {
-  background: #FF9933;
+  background: #aa863a;
   border-radius: 50%;
 }
 .container3 {
@@ -502,5 +501,10 @@ p {
   border-radius: 5px;
 }
 .container3 nav a:hover {
-  color: #FF9933;
+  color: #aa863a;
+  text-decoration: none;
+}
+.container3 p {
+  font: #f0eceb;
+  text-align: center;
 }
